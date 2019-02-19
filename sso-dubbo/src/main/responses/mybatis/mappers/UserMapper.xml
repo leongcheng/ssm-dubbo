@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.sso.mapper.UserMapper">
+
+    <!--查寻用户记录总数-->
+    <select id="findCheckUser" resultType="java.lang.Integer">
+        select count(*) from tb_user where ${cloumn} = #{param}
+    </select>
+
+    <select id="findUserByUP" resultType="com.ssm.common.po.User">
+
+    </select>
+</mapper>
